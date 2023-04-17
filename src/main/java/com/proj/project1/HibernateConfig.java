@@ -1,6 +1,7 @@
-package com.proj.project1.utils;
+package com.proj.project1;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -15,6 +16,7 @@ import javax.persistence.EntityManagerFactory;
 @Configuration
 @EnableJpaRepositories(basePackages = "com.proj.project1")
 @EnableTransactionManagement
+@ComponentScan("com.proj.project1")
 public class HibernateConfig {
 
     @Bean

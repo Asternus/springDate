@@ -1,4 +1,4 @@
-package com.proj.project1.entity;
+package com.proj.project1;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +24,16 @@ public class User {
     private String name;
 
     private String type;
+
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
+
+    private int age;
+
+    private String gender;
 
     public User() {
     }
